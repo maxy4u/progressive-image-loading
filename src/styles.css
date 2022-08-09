@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image.loaded {
+  filter: blur(0px);
+  transition: filter 0.5s linear;
+}
+
+.image.loading {
+  filter: blur(10px);
+  clip-path: inset(0);
+}
